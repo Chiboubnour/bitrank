@@ -1,0 +1,158 @@
+
+
+================================================================
+== Synthesis Summary Report of 'bitrank'
+================================================================
++ General Information: 
+    * Date:           Thu Sep 19 15:41:01 2024
+    * Version:        2023.1 (Build 3854077 on May  4 2023)
+    * Project:        bitrank
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |  Modules  | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |          |           |     |
+    |  & Loops  | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ bitrank  |     -|  0.69|        1|  10.000|         -|        2|     -|        no|     -|   -|  34 (~0%)|  1693 (3%)|    -|
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-----------+---------+-----------+----------+
+| Port      | Mode    | Direction | Bitwidth |
++-----------+---------+-----------+----------+
+| ap_return |         | out       | 7        |
+| p_val     | ap_none | in        | 64       |
+| pos_r     | ap_none | in        | 6        |
++-----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-------------------+
+| Argument | Direction | Datatype          |
++----------+-----------+-------------------+
+| _val     | in        | ap_uint<64>       |
+| pos      | in        | ap_uint<6> const  |
+| return   | out       | ap_uint<7>        |
++----------+-----------+-------------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| _val     | p_val        | port    |
+| pos      | pos_r        | port    |
+| return   | ap_return    | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                     | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++--------------------------+-----+--------+-------------+-----+--------+---------+
+| + bitrank                | 0   |        |             |     |        |         |
+|   add_ln44_fu_1862_p2    | -   |        | add_ln44    | add | fabric | 0       |
+|   add_ln44_1_fu_1872_p2  | -   |        | add_ln44_1  | add | fabric | 0       |
+|   add_ln44_2_fu_1882_p2  | -   |        | add_ln44_2  | add | fabric | 0       |
+|   add_ln44_3_fu_1892_p2  | -   |        | add_ln44_3  | add | fabric | 0       |
+|   add_ln44_4_fu_1902_p2  | -   |        | add_ln44_4  | add | fabric | 0       |
+|   add_ln44_5_fu_1912_p2  | -   |        | add_ln44_5  | add | fabric | 0       |
+|   add_ln44_6_fu_1922_p2  | -   |        | add_ln44_6  | add | fabric | 0       |
+|   add_ln44_7_fu_1928_p2  | -   |        | add_ln44_7  | add | fabric | 0       |
+|   add_ln44_8_fu_1938_p2  | -   |        | add_ln44_8  | add | fabric | 0       |
+|   add_ln44_9_fu_1948_p2  | -   |        | add_ln44_9  | add | fabric | 0       |
+|   add_ln44_10_fu_1958_p2 | -   |        | add_ln44_10 | add | fabric | 0       |
+|   add_ln44_11_fu_1968_p2 | -   |        | add_ln44_11 | add | fabric | 0       |
+|   add_ln44_12_fu_1978_p2 | -   |        | add_ln44_12 | add | fabric | 0       |
+|   add_ln44_13_fu_1988_p2 | -   |        | add_ln44_13 | add | fabric | 0       |
+|   add_ln44_14_fu_2396_p2 | -   |        | add_ln44_14 | add | fabric | 0       |
+|   add_ln44_15_fu_1994_p2 | -   |        | add_ln44_15 | add | fabric | 0       |
+|   add_ln44_16_fu_2004_p2 | -   |        | add_ln44_16 | add | fabric | 0       |
+|   add_ln44_17_fu_2014_p2 | -   |        | add_ln44_17 | add | fabric | 0       |
+|   add_ln44_18_fu_2024_p2 | -   |        | add_ln44_18 | add | fabric | 0       |
+|   add_ln44_19_fu_2034_p2 | -   |        | add_ln44_19 | add | fabric | 0       |
+|   add_ln44_20_fu_2044_p2 | -   |        | add_ln44_20 | add | fabric | 0       |
+|   add_ln44_21_fu_2054_p2 | -   |        | add_ln44_21 | add | fabric | 0       |
+|   add_ln44_22_fu_2060_p2 | -   |        | add_ln44_22 | add | fabric | 0       |
+|   add_ln44_23_fu_2070_p2 | -   |        | add_ln44_23 | add | fabric | 0       |
+|   add_ln44_24_fu_2080_p2 | -   |        | add_ln44_24 | add | fabric | 0       |
+|   add_ln44_25_fu_2090_p2 | -   |        | add_ln44_25 | add | fabric | 0       |
+|   add_ln44_26_fu_2100_p2 | -   |        | add_ln44_26 | add | fabric | 0       |
+|   add_ln44_27_fu_2110_p2 | -   |        | add_ln44_27 | add | fabric | 0       |
+|   add_ln44_28_fu_2120_p2 | -   |        | add_ln44_28 | add | fabric | 0       |
+|   add_ln44_29_fu_2412_p2 | -   |        | add_ln44_29 | add | fabric | 0       |
+|   add_ln44_30_fu_2422_p2 | -   |        | add_ln44_30 | add | fabric | 0       |
+|   add_ln44_31_fu_2126_p2 | -   |        | add_ln44_31 | add | fabric | 0       |
+|   add_ln44_32_fu_2136_p2 | -   |        | add_ln44_32 | add | fabric | 0       |
+|   add_ln44_33_fu_2146_p2 | -   |        | add_ln44_33 | add | fabric | 0       |
+|   add_ln44_34_fu_2156_p2 | -   |        | add_ln44_34 | add | fabric | 0       |
+|   add_ln44_35_fu_2166_p2 | -   |        | add_ln44_35 | add | fabric | 0       |
+|   add_ln44_36_fu_2176_p2 | -   |        | add_ln44_36 | add | fabric | 0       |
+|   add_ln44_37_fu_2186_p2 | -   |        | add_ln44_37 | add | fabric | 0       |
+|   add_ln44_38_fu_2192_p2 | -   |        | add_ln44_38 | add | fabric | 0       |
+|   add_ln44_39_fu_2202_p2 | -   |        | add_ln44_39 | add | fabric | 0       |
+|   add_ln44_40_fu_2212_p2 | -   |        | add_ln44_40 | add | fabric | 0       |
+|   add_ln44_41_fu_2222_p2 | -   |        | add_ln44_41 | add | fabric | 0       |
+|   add_ln44_42_fu_2232_p2 | -   |        | add_ln44_42 | add | fabric | 0       |
+|   add_ln44_43_fu_2242_p2 | -   |        | add_ln44_43 | add | fabric | 0       |
+|   add_ln44_44_fu_2252_p2 | -   |        | add_ln44_44 | add | fabric | 0       |
+|   add_ln44_45_fu_2438_p2 | -   |        | add_ln44_45 | add | fabric | 0       |
+|   add_ln44_46_fu_2258_p2 | -   |        | add_ln44_46 | add | fabric | 0       |
+|   add_ln44_47_fu_2268_p2 | -   |        | add_ln44_47 | add | fabric | 0       |
+|   add_ln44_48_fu_2278_p2 | -   |        | add_ln44_48 | add | fabric | 0       |
+|   add_ln44_49_fu_2288_p2 | -   |        | add_ln44_49 | add | fabric | 0       |
+|   add_ln44_50_fu_2298_p2 | -   |        | add_ln44_50 | add | fabric | 0       |
+|   add_ln44_51_fu_2308_p2 | -   |        | add_ln44_51 | add | fabric | 0       |
+|   add_ln44_52_fu_2318_p2 | -   |        | add_ln44_52 | add | fabric | 0       |
+|   add_ln44_53_fu_2324_p2 | -   |        | add_ln44_53 | add | fabric | 0       |
+|   add_ln44_54_fu_2334_p2 | -   |        | add_ln44_54 | add | fabric | 0       |
+|   add_ln44_55_fu_2344_p2 | -   |        | add_ln44_55 | add | fabric | 0       |
+|   add_ln44_56_fu_2354_p2 | -   |        | add_ln44_56 | add | fabric | 0       |
+|   add_ln44_57_fu_2364_p2 | -   |        | add_ln44_57 | add | fabric | 0       |
+|   add_ln44_58_fu_2374_p2 | -   |        | add_ln44_58 | add | fabric | 0       |
+|   add_ln44_59_fu_2384_p2 | -   |        | add_ln44_59 | add | fabric | 0       |
+|   add_ln44_60_fu_2454_p2 | -   |        | add_ln44_60 | add | fabric | 0       |
+|   add_ln44_61_fu_2464_p2 | -   |        | add_ln44_61 | add | fabric | 0       |
+|   ap_return              | -   |        | count_1     | add | fabric | 0       |
++--------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++--------+---------+---------------------------+
+| Type   | Options | Location                  |
++--------+---------+---------------------------+
+| unroll |         | bitrank.cpp:43 in bitrank |
++--------+---------+---------------------------+
+
+

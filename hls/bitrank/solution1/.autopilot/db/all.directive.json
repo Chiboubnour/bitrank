@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "bitrank",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "bitrank"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/nour/Bureau/Optimisations/Bitrank/bitrank/solution1/csynth.tcl",
+    "sourceLine": 15,
+    "success": true
+  }
+]

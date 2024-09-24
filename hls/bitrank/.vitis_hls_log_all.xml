@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <packageLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <packageLog>
+        <logs message="WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port &quot;ap_clk&quot; is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew&#xA;Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design" projectName="bitrank" solutionName="solution1" date="2024-09-19T15:45:57.565+0200" type="Warning"/>
+        <logs message="WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port &quot;ap_clk&quot; is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew&#xA;Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design" projectName="bitrank" solutionName="solution1" date="2024-09-19T15:45:51.026+0200" type="Warning"/>
+        <logs message="WARNING: [Constraints 18-8777] Unable to split tiles. All required files are not available.&#xA;Post Restoration Checksum: NetGraph: f9ca68f7 | NumContArr: 919f0476 | Constraints: 190a55ad | Timing: 0&#xA;Phase 1 Build RT Design | Checksum: 1a473c31a&#xA;&#xA;&#xA;Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2803.695 ; gain = 101.793 ; free physical = 932 ; free virtual = 7144&#xA;&#xA;&#xA;Phase 2 Router Initialization&#xA;&#xA;&#xA;Phase 2.1 Fix Topology Constraints&#xA;Phase 2.1 Fix Topology Constraints | Checksum: 1a473c31a&#xA;&#xA;&#xA;Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2803.695 ; gain = 101.793 ; free physical = 932 ; free virtual = 7144&#xA;&#xA;&#xA;Phase 2.2 Pre Route Cleanup&#xA;Phase 2.2 Pre Route Cleanup | Checksum: 1a473c31a&#xA;&#xA;&#xA;Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2803.695 ; gain = 101.793 ; free physical = 932 ; free virtual = 7144&#xA; Number of Nodes with overlaps = 0&#xA;&#xA;&#xA;Phase 2.3 Update Timing&#xA;Phase 2.3 Update Timing | Checksum: d5f21592&#xA;&#xA;&#xA;Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 2807.820 ; gain = 105.918 ; free physical = 917 ; free virtual = 7129" projectName="bitrank" solutionName="solution1" date="2024-09-19T15:45:51.023+0200" type="Warning"/>
+        <logs message="WARNING: [Route 35-198] Port &quot;p_val[52]&quot; does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal &quot;p_val[52]&quot;. Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported." projectName="bitrank" solutionName="solution1" date="2024-09-19T15:45:46.714+0200" type="Warning"/>
+        <logs message="WARNING: [Route 35-198] Port &quot;p_val[55]&quot; does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal &quot;p_val[55]&quot;. Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported." projectName="bitrank" solutionName="solution1" date="2024-09-19T15:45:26.975+0200" type="Warning"/>
+        <logs message="WARNING: [Route 35-198] Port &quot;p_val[53]&quot; does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal &quot;p_val[53]&quot;. Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported." projectName="bitrank" solutionName="solution1" date="2024-09-19T15:45:26.973+0200" type="Warning"/>
+      </packageLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

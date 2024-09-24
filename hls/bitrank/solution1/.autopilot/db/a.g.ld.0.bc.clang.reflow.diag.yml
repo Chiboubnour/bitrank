@@ -1,0 +1,16 @@
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: bitrank.cpp, Line: 40, Column: 0 }
+Function:        _Z7bitrank7ap_uintILi64EES_ILi6EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_42_1
+  - String:          ''' ('
+  - LoopLoc:         'bitrank.cpp:42:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          bitrank
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...

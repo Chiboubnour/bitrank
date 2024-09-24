@@ -1,0 +1,12 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/nour/Bureau/Optimisations/Bitrank/bitrank/solution1/csynth.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="bitrank" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=bitrank" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="bitrank.cpp:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bitrank" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="bitrank.cpp:40:0" msg_body="Unrolling loop 'VITIS_LOOP_42_1' (bitrank.cpp:42:23) in function 'bitrank' completely with a factor of 64">
+        <args Factor="64" LoopLoc="bitrank.cpp:42:23" LoopName="VITIS_LOOP_42_1"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

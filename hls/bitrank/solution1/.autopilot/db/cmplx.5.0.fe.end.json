@@ -1,0 +1,11 @@
+{
+    "0": {
+        "name": "bitrank",
+        "file": "bitrank.cpp",
+        "fileloc": "40",
+        "instructions": "392",
+        "total_instructions": "392",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}

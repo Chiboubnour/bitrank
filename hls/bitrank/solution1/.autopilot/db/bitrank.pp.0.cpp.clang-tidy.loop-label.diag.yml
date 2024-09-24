@@ -1,0 +1,58 @@
+---
+MainSourceFile:  /home/nour/Bureau/Optimisations/Bitrank/bitrank/solution1/.autopilot/db/bitrank.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1213_1:  '
+    FileOffset:      1213
+    FilePath:        /home/nour/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/nour/Bureau/Optimisations/Bitrank/bitrank/solution1/.autopilot/db/bitrank.pp.0.cpp
+        Offset:          115322
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home/nour/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/nour/Bureau/Optimisations/Bitrank/bitrank/solution1/.autopilot/db/bitrank.pp.0.cpp
+        Offset:          342842
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home/nour/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/nour/Bureau/Optimisations/Bitrank/bitrank/solution1/.autopilot/db/bitrank.pp.0.cpp
+        Offset:          343306
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home/nour/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/nour/Bureau/Optimisations/Bitrank/bitrank/solution1/.autopilot/db/bitrank.pp.0.cpp
+        Offset:          343771
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /home/nour/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/nour/Bureau/Optimisations/Bitrank/bitrank/solution1/.autopilot/db/bitrank.pp.0.cpp
+        Offset:          626693
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_42_1:  '
+    FileOffset:      42
+    FilePath:        bitrank.cpp
+    Replacements:    
+      - FilePath:        /home/nour/Bureau/Optimisations/Bitrank/bitrank/solution1/.autopilot/db/bitrank.pp.0.cpp
+        Offset:          994895
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_42_1: '
+...
